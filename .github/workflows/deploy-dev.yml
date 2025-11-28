@@ -1,4 +1,4 @@
-name: deploy-client-dev
+name: deploy-dev
 
 on:
   push:
@@ -25,7 +25,8 @@ jobs:
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*" \
-            --exclude "README.md"
+            --exclude "node_modules/*" \
+            --exclude "dist/*"
           aws cloudfront create-invalidation \
             --distribution-id EGYA9H4WGTZXH \
             --paths "/*"
