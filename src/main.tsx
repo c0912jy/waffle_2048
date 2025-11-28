@@ -1,9 +1,14 @@
-// src/main.tsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import './game.js';
 
 const rootElement = document.getElementById('root');
-if (rootElement === null) {
+if (!rootElement) {
   throw new Error('Root element not found');
 }
 
-export {};
+ReactDOM.createRoot(rootElement).render(
+  <React.StrictMode>
+    <div />
+  </React.StrictMode>
+);
