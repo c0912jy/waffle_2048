@@ -1,31 +1,13 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>2048 과제</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <main class="wrap">
-    <header class="topbar">
-      <h1>2048</h1>
-      <div class="controls">
-        <div class="score"><span>점수</span><strong id="score">0</strong></div>
-        <button id="newGameBtn" class="btn" type="button">새 게임</button>
-      </div>
-    </header>
-    <section id="board" class="board"></section>
-    <div id="overlay" class="overlay hidden">
-      <div class="panel">
-        <h2 id="overlayTitle">128 타일 달성</h2>
-        <button id="restartBtn" class="btn" type="button">다시 시작</button>
-      </div>
-    </div>
-  </main>
-  <script type="module" src="game.js"></script>
-</body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
