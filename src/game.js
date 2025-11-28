@@ -156,7 +156,7 @@ function dir(k) {
 function save() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  } catch (e) {
+  } catch (_e) {
     /* ignore */
   }
 }
