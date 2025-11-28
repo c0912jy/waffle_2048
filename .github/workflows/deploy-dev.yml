@@ -21,7 +21,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ap-northeast-2
         run: |
-          aws s3 sync . s3://c0912jy-action-dev \
+          aws s3 sync . s3://2048-game-dev-c0912jy \
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*" \
